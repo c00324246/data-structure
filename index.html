@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carlow City Route Planner</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+    <h1>Carlow City Route Planner</h1>
+    <p>Find the shortest walking route in Carlow.</p>
+
+    <div class="container">
+<label>Starting location:</label>
+
+<select id="start">
+    <option value="service">Fire Service</option>
+    <option value="store">Polonez</option>
+    <option value="town">Town Centre</option>
+</select>
+
+<label>Destination:</label>
+
+<select id="end">
+    <option value="town">Town Centre</option>
+    <option value="service">Fire Service</option>
+    <option value="store">Polonez</option>
+</select>
+<hr>
+
+<h3>Add New Location</h3>
+
+<label>Location name:</label>
+
+<input type="text" id="locationName" placeholder="Enter location name">
+
+<p>Click on the map to select a location.</p>
+
+<button onclick="addLocation()">Add Location</button>
+
+<div id="selectedLocation"></div>
+
+<hr>
+
+        <button onclick="findRoute()">Find Route</button>
+        <div id="map"></div>
+
+        <div id="result"></div>
+
+        
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 30px;
+}
+
+h1 {
+    color: #333333;
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #287a4b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #205f3b;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+#map {
+    height: 450px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid grey;
+}
+/* Add Location section */
+.add-location {
+    background-color: #f4f7fa;
+    border: 1px solid #d6dfe8;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 400px;
+}
+
+.add-location h3 {
+    margin-top: 0;
+    color: #263b50;
+}
+
+.add-location label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.add-location input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #b8c5d1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.add-location p {
+    color: #526575;
+    font-size: 14px;
+}
+
+.add-location button {
+    background-color: #2878b5;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-location button:hover {
+    background-color: #1d5d8d;
+}
+
+#selectedLocation {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #2878b5;
+}
+#locationName {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #b8c5d1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#locationName:focus {
+    border-color: #2878b5;
+    box-shadow: 0 0 4px rgba(40, 120, 181, 0.3);
+}
+
+#locationName::placeholder {
+    color: #999;
+}
